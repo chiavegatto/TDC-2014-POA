@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/textView_periodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meses_anteriores_label_data_inicio" />
+
+    <EditText
+        android:id="@+id/editText_data_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView_data_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meses_anteriores_label_data_final" />
+
+    <EditText
+        android:id="@+id/editText_data_final"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_desempenho_abastecimentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioButton_desempenho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButton_desempenho" 
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_abastecimentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiobutton_abastecimentos" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button_pesquisar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/meses_anteriores_button_pesquisar" />
+    </LinearLayout>
+
+</LinearLayout>

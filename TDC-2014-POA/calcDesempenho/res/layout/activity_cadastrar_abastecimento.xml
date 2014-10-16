@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CadastrarAbastecimento" >
+
+    <TextView
+        android:id="@+id/TextView_km_abastecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro_abastecimento_label_km_abastecimento" />
+
+    <EditText
+        android:id="@+id/editText_km_abastecimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/exemplo_cadastro_abastecimento_editText_km_abastecimento"
+        android:inputType="number" 
+        android:maxLength="10"/>
+
+    <TextView
+        android:id="@+id/textView_quantidade_litros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro_abastecimento_label_abastecimentoquantidade_litros" />
+
+    <EditText
+        android:id="@+id/editText_quantidade_litros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/exemplo_cadastro_abastecimento_editText_quantidade_litros"
+        android:inputType="numberDecimal" 
+        android:maxLength="10"/>
+
+    <TextView
+        android:id="@+id/TextView_valor_gasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro_abastecimento_label_valor" />
+
+    <EditText
+        android:id="@+id/editText_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/exemplo_cadastro_abastecimento_editText_valor"
+        android:inputType="numberDecimal" 
+        android:maxLength="10"/>
+
+    <TextView
+        android:id="@+id/textView_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro_abastecimento_label_data"/>
+
+    <EditText
+        android:id="@+id/editText_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none" 
+        android:maxLength="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+      <Button
+          android:id="@+id/button_cadastrar"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:text="@string/button_cadastrar" />
+
+    </LinearLayout>
+
+</LinearLayout>

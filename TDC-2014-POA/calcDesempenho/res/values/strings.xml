@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Meu Desempenho Gasolina</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="textView_km_litro">KM Litro:</string>
+    <string name="textView_valor_abastecimento">Valor Abastecimento:</string>
+    <string name="textView_quantidade_abastecimento">Quantidade Abastecimento:</string>
+    <string name="label_main_activity">Desempenho Mensal</string>
+    <string name="menu_item_cadastrar_abastecimento">Adicionar Abastecimentos</string>
+    <string name="menu_item_lista_abastecimento">Abastecimentos Cadastrados</string>
+    <string name="title_activity_cadastrar_abastecimento">Adicionar Abastecimentos</string>
+    <string name="exemplo_cadastro_abastecimento_editText_km_abastecimento">Exemplo 13450</string>
+    <string name="cadastro_abastecimento_label_km_abastecimento">KM no Abastecimento:*</string>
+    <string name="textView_quantidade_litros">Quantidade Litros:</string>
+    <string name="textView_quantidade_km">Quantidade KM:</string>
+    <string name="cadastro_abastecimento_label_abastecimentoquantidade_litros">Quantidade de Litros:*</string>
+    <string name="exemplo_cadastro_abastecimento_editText_quantidade_litros">Exemplo 40.4</string>
+    <string name="cadastro_abastecimento_label_valor">Valor:*</string>
+    <string name="exemplo_cadastro_abastecimento_editText_valor">Exemplo 120.23</string>
+    <string name="cadastro_abastecimento_label_data">Data:*</string>
+    <string name="textView_valor_gasto">Valor Gasto:</string>
+    <string name="menu_item_opcoes">Opções</string>
+    <string name="menu_item_meses_anteriores">Meses Anteriores</string>
+    <string name="button_cancelar">Cancelar</string>
+    <string name="button_cadastrar">Cadastrar</string>
+    <string name="title_activity_lista_abastecimento">Abastecimentos Cadastrados</string>
+    <string name="exemplo_editText_km_inicial">Exemplo 15480</string>
+    <string name="menu_item_lista_km_inicio">Visualizar KM Início</string>
+    <string name="title_activity_meses_anteriores">Meses Anteriores</string>
+    <string name="meses_anteriores_label_data_inicio">Período Inicial:</string>
+    <string name="meses_anteriores_label_data_final">Período Final:</string>
+    <string name="meses_anteriores_button_pesquisar">Pesquisar</string>
+    <string name="text_editText_nenhum_abastecimento_cadastrado">Nenhum abastecimento cadastrado.</string>
+    <string name="title_activity_item_lista_abastecimento">ItemListaAbastecimento</string>
+    <string name="lista_abastecimento_label_data">"Data Abastecimento: "</string>
+    <string name="label_data_lista_abastecimento_item_grid">"Data: "</string>
+    <string name="label_listros_lista_abastecimento_item_grid">Litros:</string>
+    <string name="label_valor_lista_abastecimento_item_grid">Valor:</string>
+    <string name="label_km_no_abastecimento_lista_abastecimento_item_grid">KM:</string>
+    <string name="mensagem_listView_vazio">Nenhum abastecimento cadastrado.</string>
+    <string name="action_voltar">Voltar</string>
+    <string name="title_activity_meses_anteriores_desempenho">Desempenho</string>
+    <string name="title_activity_meses_anteriores_abastecimentos">Abastecimentos</string>
+    <string name="radioButton_desempenho">Desempenho</string>
+    <string name="radiobutton_abastecimentos">Abastecimento</string>
+    <string name="menu_item_backup">Backup</string>
+    <string name="menu_item_restaurar">Restaurar</string>
+
+</resources>

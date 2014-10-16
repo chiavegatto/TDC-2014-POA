@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MesesAnterioresDesempenho" 
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_km_litro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_km_litro"/>
+
+    <EditText
+        android:id="@+id/editText_km_litro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"/>
+
+    <TextView
+        android:id="@+id/textView_valor_abastecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_valor_abastecimento"/>
+
+    <EditText
+        android:id="@+id/editText_valor_abastecimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"/>
+
+    <TextView
+        android:id="@+id/textView_quantidade_abastecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_quantidade_abastecimento"/>
+
+    <EditText
+        android:id="@+id/editText_quantidade_abastecimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"/>
+
+    <TextView
+        android:id="@+id/textView_quantidade_litros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_quantidade_litros"/>
+
+    <EditText
+        android:id="@+id/editText_quantidade_litros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"/>
+
+    <TextView
+        android:id="@+id/textView_quantidade_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_quantidade_km"/>
+
+    <EditText
+        android:id="@+id/editText_quantidade_km"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"/>
+
+</LinearLayout>

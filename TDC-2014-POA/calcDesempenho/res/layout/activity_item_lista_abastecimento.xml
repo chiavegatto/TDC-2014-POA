@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/textView_data_do_abastecimento"
+            style="@style/listTextStyle"
+            android:gravity="center_vertical"
+            android:text="@string/label_data_lista_abastecimento_item_grid" />
+
+        <TextView
+            android:id="@+id/textView_valor_data_do_abastecimento"
+            style="@style/listTextStyle"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/textView_litros"
+            style="@style/listTextStyle"
+            android:gravity="center_vertical"
+            android:text="@string/label_listros_lista_abastecimento_item_grid" />
+
+        <TextView
+            android:id="@+id/textView_valor_litros_do_abastecimento"
+            style="@style/listTextStyle"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="7dp" />
+        <TextView
+            android:id="@+id/textView_valor"
+            style="@style/listTextStyle"
+            android:gravity="center_vertical"
+            android:text="@string/label_valor_lista_abastecimento_item_grid" />
+
+        <TextView
+            android:id="@+id/textView_valor_abastecido"
+            style="@style/listTextStyle"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/textView_km_do_abastecimento"
+            style="@style/listTextStyle"
+            android:gravity="center_vertical"
+            android:text="@string/label_km_no_abastecimento_lista_abastecimento_item_grid" />
+
+        <TextView
+            android:id="@+id/textView_valor_km_no_abastecimento"
+            style="@style/listTextStyle"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="7dp" />
+    </LinearLayout>
+
+</LinearLayout>

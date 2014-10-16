@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.calcdesempenho"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="20" />
+   
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.com.calcdesempenho.MainActivity"
+            android:label="@string/label_main_activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.calcdesempenho.CadastrarAbastecimento"
+            android:label="@string/title_activity_cadastrar_abastecimento" >
+        </activity>
+        <activity
+            android:name="br.com.calcdesempenho.ListaAbastecimento"
+            android:label="@string/title_activity_lista_abastecimento" >
+        </activity>
+        <activity
+            android:name="br.com.calcdesempenho.MesesAnteriores"
+            android:label="@string/title_activity_meses_anteriores" >
+        </activity>
+        <activity
+            android:name="br.com.calcdesempenho.ItemListaAbastecimento"
+            android:label="@string/title_activity_item_lista_abastecimento" >
+        </activity>
+        <activity
+            android:name="br.com.calcdesempenho.MesesAnterioresDesempenho"
+            android:label="@string/title_activity_meses_anteriores_desempenho" >
+        </activity>
+        <activity
+            android:name="br.com.calcdesempenho.MesesAnterioresAbastecimentos"
+            android:label="@string/title_activity_meses_anteriores_abastecimentos" >
+        </activity>
+    </application>
+</manifest>

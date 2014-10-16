@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_opcoes"
+        android:icon="@drawable/opcoes_icon"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_item_opcoes">
+        <menu>
+            <item
+                android:id="@+id/action_cadastrar_abastecimento"
+                android:showAsAction="ifRoom"
+                android:title="@string/menu_item_cadastrar_abastecimento"/>
+            <item
+                android:id="@+id/action_listar_abastecimentos"
+                android:showAsAction="ifRoom"
+                android:title="@string/menu_item_lista_abastecimento"/>
+            <item
+                android:id="@+id/action_desempenho_meses_anteriores"
+                android:showAsAction="ifRoom"
+                android:title="@string/menu_item_meses_anteriores"/>
+ <!--            <item
+                android:id="@+id/action_backup"
+                android:showAsAction="ifRoom"
+                android:title="@string/menu_item_backup"/>
+            <item
+                android:id="@+id/action_restaurar"
+                android:showAsAction="ifRoom"
+                android:title="@string/menu_item_restaurar"/> -->
+        </menu>
+    </item>
+
+</menu>
