@@ -6,7 +6,7 @@ Este projeto foi criado para a apresentação "Testes de aceitação automatizad
 Divisão de projetos
 ----
 Há duas pastas no repositório
- * **calcDesempenho**: projeto construido para o controle de abastecimentos de gasolina que foi utilizado como exemplo na apresentação. É necessário ter o [Maven] e [Android SDK] instalados
+ * **calcDesempenho**: projeto construido para o controle de abastecimentos de gasolina que foi utilizado como exemplo na apresentação. É necessário ter o [Maven] e [Android SDK] instalados.
  
  * **desempenhotest**: projeto em [Java] desenvolvido utilizando [Eclipse IDE],[Maven],[Robotium] e [Cucumber-JVM].
  
