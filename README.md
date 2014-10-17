@@ -6,7 +6,7 @@ Este projeto foi criado para a apresentação "Testes de aceitação automatizad
 Divisão de projetos
 ----
 Há duas pastas no repositório
- * **calcDesempenho**: projeto construido para o controle de abastecimentos de gasolina que foi utilizado como exemplo na apresentação. É necessário ter o [Maven] e [ADB] instalados
+ * **calcDesempenho**: projeto construido para o controle de abastecimentos de gasolina que foi utilizado como exemplo na apresentação. É necessário ter o [Maven] e [Android SDK] instalados
  
  * **desempenhotest**: projeto em [Java] desenvolvido utilizando [Eclipse IDE],[Maven],[Robotium] e [Cucumber-JVM].
  
@@ -27,3 +27,4 @@ Plugin para visualização dos cenários https://github.com/rlogiacco/Natural/wi
 [Java]:http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html?ssSourceSiteId=otnpt
 [Eclipse IDE]:http://www.eclipse.org/home/index.php
 [Maven]:http://maven.apache.org
+[Android SDK]: https://developer.android.com/sdk/index.html?hl=i
