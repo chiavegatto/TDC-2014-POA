@@ -8,4 +8,8 @@ Divisão de projetos
 Há duas pastas no repositório
  * **calcDesempenho**: projeto construido para o controle de abastecimentos de gasolina que foi utilizado como exemplo na apresentação. É necessário ter o [Maven] e [ADB] instalados
  
- * **desempenhotest**: projeto em [Java] desenvolvido utilizando [Eclipse IDE] e [Maven].
+ * **desempenhotest**: projeto em [Java] desenvolvido utilizando [ IDE] e [Maven].
+
+ 
+ 
+ myiotgadgets

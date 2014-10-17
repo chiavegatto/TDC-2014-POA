@@ -1,10 +1,14 @@
 package br.com.calcdesempenho.desempenhotest;
 
+import java.util.Calendar;
 import java.util.Map;
 
 import android.test.ActivityInstrumentationTestCase2;
+import android.widget.EditText;
 import br.com.calcdesempenho.MainActivity;
+import br.com.calcdesempenho.R;
 import br.com.calcdesempenho.entidades.Abastecimento;
+import br.com.desempenho.util.Utils;
 
 import com.robotium.solo.Solo;
 
@@ -17,8 +21,11 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 @CucumberOptions(features = "features",
-				 tags = {"@Dev"},
-                 format = { "html:target/cucumber" })
+				 tags = {"@RF1"},
+				 //tags = {"@UmAbastecimento"},
+				 //tags = {"@MesesAnteriores"},
+	             format = { "html:target/cucumber" })
+
 public class StepDefCalDesempenho extends ActivityInstrumentationTestCase2<MainActivity> {
 
 	private Solo solo;
@@ -56,7 +63,6 @@ public class StepDefCalDesempenho extends ActivityInstrumentationTestCase2<MainA
 			abastecimento.preencherAbastecimento(abastecimento, solo);
 		}
 	}
-
 	
 	@When("^Preencho a data do abastecimento com a data \"([^\"]*)\"$")
 	public void Preencho_a_data_do_abastecimento_com_a_data(String txDataAbastecimento) throws Throwable {
@@ -108,12 +114,37 @@ public class StepDefCalDesempenho extends ActivityInstrumentationTestCase2<MainA
 	public void Deve_ser_exibido_um_modal_de_confirmação_da_exclusão() throws Throwable {
 		solo.waitForDialogToOpen();
 	}
+	
+	@Then("^Deve ser exibido as seguintes informações no desempenho de abastecimento:$")
+	public void Deve_ser_exibido_as_seguintes_informações_no_desempenho_de_abastecimento(DataTable tableAbastecimento) throws Throwable {
+		for (Map<String, String> dadosAbastecimento : tableAbastecimento.asMaps()) {
+			assertTrue(solo.searchText(dadosAbastecimento.get("KM Abastecimento")));
+			assertTrue(solo.searchText(dadosAbastecimento.get("Quantidade Litros")));
+			assertTrue(solo.searchText(dadosAbastecimento.get("Valor")));
+			assertTrue(solo.searchText(dadosAbastecimento.get("Quantidade Abastecimentos")));
+			assertTrue(solo.searchText(dadosAbastecimento.get("Quantidade KM")));
+		}
+	}
+	
+	@When("^Preencho a data início \"([^\"]*)\" e data final \"([^\"]*)\"$")
+	public void Preencho_a_data_início_e_data_final(String dataInicio, String dataFinal) throws Throwable {
+		EditText editDataInicio = (EditText) solo.getCurrentActivity().findViewById(R.id.editText_data_inicio);
+		EditText editDataFinal = (EditText) solo.getCurrentActivity().findViewById(R.id.editText_data_final);
+		
+		Calendar calDataInicio = Utils.converteStringEmCalendar(dataInicio);
+		solo.clickOnView(editDataInicio);
+		Utils.preencherDatePickerCriadoEmTempoExecucao(calDataInicio, solo);
 
-/*	@When("^Pressiono com um click longo no abastecimento cadastrado$")
-	public void Pressiono_com_um_click_longo_no_abastecimento_cadastrado() throws Throwable {
-		solo.clickLongInList(0);
-	}*/
-
-
-
+		Calendar calDataFinal = Utils.converteStringEmCalendar(dataFinal);
+		solo.clickOnView(editDataFinal);
+		Utils.preencherDatePickerCriadoEmTempoExecucao(calDataFinal, solo);
+	}
+	
+	@When("^Seleciono a pesquisa por \"([^\"]*)\"$")
+	public void Seleciono_a_pesquisa_por(String txOpcaoPesquisa) throws Throwable {
+		solo.clickOnText(txOpcaoPesquisa);
+	}
+	@Given("^Clico x$")
+	public void Clico_x() throws Throwable {
+	}
 }
