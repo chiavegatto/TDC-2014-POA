@@ -93,8 +93,3 @@ Scenario: Exibição de abastecimentos dos meses anteriores
 	Then Deve ser exibido as seguintes informações no desempenho de abastecimento:
 		|KM Abastecimento|Quantidade Litros|Valor |Quantidade Abastecimentos|Quantidade KM|
 		|0               |34.14            |106.86|1                        |0            |
-																			
-																			
-	@RF1																		
-Scenario: teste
-Given Clico x				 															

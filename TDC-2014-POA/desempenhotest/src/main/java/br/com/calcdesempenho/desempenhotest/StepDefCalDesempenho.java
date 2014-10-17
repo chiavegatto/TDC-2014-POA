@@ -21,7 +21,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 @CucumberOptions(features = "features",
-				 tags = {"@RF1"},
+				 tags = {"@Exec"},
 				 //tags = {"@UmAbastecimento"},
 				 //tags = {"@MesesAnteriores"},
 	             format = { "html:target/cucumber" })
@@ -143,8 +143,5 @@ public class StepDefCalDesempenho extends ActivityInstrumentationTestCase2<MainA
 	@When("^Seleciono a pesquisa por \"([^\"]*)\"$")
 	public void Seleciono_a_pesquisa_por(String txOpcaoPesquisa) throws Throwable {
 		solo.clickOnText(txOpcaoPesquisa);
-	}
-	@Given("^Clico x$")
-	public void Clico_x() throws Throwable {
 	}
 }
