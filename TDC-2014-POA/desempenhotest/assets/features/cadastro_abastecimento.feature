@@ -11,7 +11,7 @@ Scenario: Cadastrar abastecimento com a data atual do sitema
 		|KM Abastecimento|Quantidade Litros|Valor |
 		|22950           |34.14            |106.86|
 	And Clico no botão "Cadastrar" 
-	Then Deve ser exibido a mensagem "Abastecimento cadastrado com sucesso!." 
+	Then Deve ser exibido a mensagem "Abastecimento cadastrado com sucesso." 
 
 @Exec	
 Scenario: Cadastrar abastecimento com a data diferente da data atual do sistema 
